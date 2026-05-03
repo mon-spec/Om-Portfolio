@@ -1,9 +1,16 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
+
+interface Experience {
+  company: string;
+  role: string;
+  period: string;
+  description: string;
+}
 
 const Experience = () => {
-  const experiences = [
+  const experiences: Experience[] = [
     {
       company: 'Tech Solutions Inc.',
       role: 'Frontend Developer',

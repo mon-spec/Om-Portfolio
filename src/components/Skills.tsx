@@ -1,9 +1,15 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
-import { Layout, Server, Database, Shield } from 'lucide-react';
+import { Layout, Shield } from 'lucide-react';
+
+interface SkillCategory {
+  title: string;
+  icon: ReactNode;
+  skills: string[];
+}
 
 const Skills = () => {
-  const skillCategories = [
+  const skillCategories: SkillCategory[] = [
     {
       title: 'Frontend',
       icon: <Layout />,

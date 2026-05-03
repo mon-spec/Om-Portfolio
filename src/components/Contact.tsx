@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Mail, Phone, Map, User, Share, Send } from 'lucide-react';
 
@@ -95,7 +95,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-1">
                 <label style={{ fontSize: '0.85rem', fontWeight: '500' }}>Message</label>
-                <textarea rows="5" placeholder="Tell me about your project..." className="form-input" style={{ resize: 'none' }}></textarea>
+                <textarea rows={5} placeholder="Tell me about your project..." className="form-input" style={{ resize: 'none' }}></textarea>
               </div>
               <button type="submit" className="btn btn-primary flex-center">
                 Send Message <Send size={18} />

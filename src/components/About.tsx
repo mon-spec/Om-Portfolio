@@ -1,9 +1,15 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { User, Code, Palette, Zap } from 'lucide-react';
 
+interface Stat {
+  icon: ReactNode;
+  label: string;
+  value: string;
+}
+
 const About = () => {
-  const stats = [
+  const stats: Stat[] = [
     { icon: <Code />, label: 'Experience', value: '2+ Years' },
     { icon: <Palette />, label: 'Projects', value: '20+' },
     { icon: <Zap />, label: 'Performance', value: '100%' },

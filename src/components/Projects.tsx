@@ -1,9 +1,18 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
+interface Project {
+  title: string;
+  category: string;
+  image: string;
+  description: string;
+  tags: string[];
+  demo: string;
+}
+
 const Projects = () => {
-  const projects = [
+  const projects: Project[] = [
     {
       title: 'E-Commerce Platform',
       category: 'Full Stack',

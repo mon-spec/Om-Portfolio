@@ -1,5 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { User, Send } from 'lucide-react';
+
+interface NavLink {
+  name: string;
+  href: string;
+}
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -12,7 +17,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+  const navLinks: NavLink[] = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
